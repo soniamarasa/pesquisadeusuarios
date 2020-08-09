@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>Pesquisa de Usuarios</title>
+</head>
+
+<body>
+
+    <div id="principal">
+
+        <h2> Pesquisa de Usuários </h2>
+
+        <div class="campobuscar display-center">
+
+            <div id="preloader">
+                <div class="preloader-wrapper small active">
+                    <div class="spinner-layer spinner-blue-only">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <h5>Aguarde...</h5>
+
+            </div>
+
+            <form>
+                <label>BUSCAR</label>
+                <div id="campobusca">
+                    <input type="text" id="pesquisa">
+
+                    <button class="waves-effect waves-light btn" id="busca"> BUSCAR </button>
+                </div>
+            </form>
+        </div>
+
+        <div id="container">
+
+            <div class="colunaresultado">
+
+                <h3 id="usuarios"> </h3>
+                <div id="resultadopesquisa"></div>
+
+            </div>
+
+            <div class="colunaestatistica">
+                <h3 id="usuariosest"> </h3>
+
+                <div id="estatistica">
+                  
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
